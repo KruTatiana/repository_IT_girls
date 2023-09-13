@@ -1,0 +1,92 @@
+.body {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+  background-color: rgb(187, 187, 187);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 10pt;
+}
+
+.header {
+  display: flex;
+  height: 10vh;
+  padding-top: 0.3em;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container {
+  display: flex;
+  box-sizing: border-box;
+  height: 76vh;
+}
+
+.light-yellow {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  padding-top: 2em;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: rgb(240, 236, 157);
+}
+
+.content {
+  text-align: center;
+}
+
+.s-half {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+}
+
+.s-half .yellow {
+  box-sizing: border-box;
+  margin: 5px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  height: 3em;
+  flex-basis: 50%;
+  text-align: center;
+  background-color: rgb(241, 217, 137);
+}
+
+
+.s-big {
+  box-sizing: border-box;
+  margin: 5px 5px 10px;
+  padding: 12px 3px;
+  height: 3em;
+  text-align: center;
+  background-color: rgb(241, 217, 137);
+}
+
+.green {
+  padding-top: 1em;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 20%;
+  background-color: rgb(165, 235, 144);
+  text-align: center;
+}
+
+.foot {
+  display: flex;
+  padding-left: 5px;
+  padding-right: 5px;
+  justify-content: space-around;
+}
+
+.f-section {
+  box-sizing: border-box;
+  margin: 10px 5px;
+  padding: 12px 3px;
+  height: 85%;
+  flex-basis: 25%;
+  text-align: center;
+  background-color: rgb(234, 234, 234);
+}
