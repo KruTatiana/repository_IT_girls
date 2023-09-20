@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'Jost';
+    src: url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+  }
+  
+  .container {
+    box-sizing: content-box;
+    max-width: 1900px;
+    margin: 0 auto;
+    padding: 0 55px;
+    font-family: 'Jost', sans-serif;
+  }
+  
+  .header {
+    position: fixed;
+    z-index: 1000;
+    top: 0px;
+    width: 100%;
+    height: 150px;
+    margin-top: 0;
+    background-color: rgb(8, 19, 48);
+    text-align: start;
+    color: rgb(85, 68, 219);
+  }
+
+  /* Оформление меню */
+  .menu a {
+    text-decoration: none;
+    color: rgb(172, 148, 218);
+  }
+
+  .list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 350px;
+    z-index: 10;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    background-color: rgb(11, 24, 62);
+    list-style-type: none;
+    display: none;
+
+  }
+
+  .list li {
+    padding: 5px 5px 7px 50px;
+  }
+
+  .list li:last-child{
+    padding-bottom: 20px;
+  }
+
+  .menu ul {
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .menu_list {
+    bottom: 0px;
+    margin-top: 35px;
+    margin-bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: bold;
+    color: #c764db;
+    list-style-type: none;
+  }
+
+  /* Добавление логотипа в правую часть шапки при помощи обтекания */
+  .logo img {
+    width: 120px;
+    height: 120px;
+    float: right;
+    margin-top: -10px;
+    margin-right: 50px;
+  }
+  
+  /* Очищающий блок после элемента float */
+  .clearfix::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+  
+main {
+  background-color: rgb(189, 172, 223);
+}
+  /* блок для исключения залезания фиксированной шапки на контент */
+  .section_header::before {
+    display: block;
+    content: "";
+    height: 150px;
+  }
+
+  .section_header{
+    color: rgb(127, 80, 220)
+  }
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .card_product {
+    display: flex;
+    flex-basis: 30%;
+    align-content: stretch;
+    margin: 80px 10px 20px 0;
+  }
+
+  .picture {
+    position: relative;
+    margin-left: 0;
+    width: 75%;
+  }
+
+  .sphere .picture,.cup .picture {
+    width: 75%;
+    height: 80%;
+  }
+
+  .lamp .picture {
+    width: 75%;
+    height: 85%;
+  }
+
+  .picture>img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Тень с кнопкой, появляющаяся над картинкой */
+  .picture .shadow {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  rgba(189, 172, 223, 0.5);
+    display: none;
+  }
+
+  .shadow .details {
+    display: block;
+    margin: 50% auto;
+    width: 150px;
+    height: 2.5em;
+    border: none;
+    text-decoration: none;
+    background-color: #c764db;
+    font-weight: bold;
+    color: rgba(85, 68, 219, 0.8);
+  }
+
+  .accessorizes {
+    margin-bottom: 0;
+    padding-bottom: 100px;
+  }
+
+  .foot {
+    background-color: rgb(8, 19, 48);
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+
+  /* Мини логотип рядом с названием НИИ */
+  .connect img {
+    height: 20px;
+  }
+
+  .connect a {
+    display: block;
+    color: #c764db;
+    text-decoration: none;
+    list-style-type: none;
+    margin-bottom: 10px;
+  }
+
+  #name {
+    color: #9144DB;
+    font-weight: bold;
+    font-size: 22px;
+  }
+
+  .copyright {
+    text-align: center;
+    padding-bottom: 10px;
+    color: rgba(189, 172, 223, 0.5);
+  }
+
+  .copyright p {
+    margin: 0;
+    font-size: 12px;
+  }
+
+  /* Эффекты для картинок */
+  .card_product:hover {
+    cursor: pointer;
+  }
+
+  .details:hover {
+    cursor: pointer;
+  }
+
+  .card_product:hover .shadow {
+    display: block;
+  }
+
+  /* Появляющееся меню */
+
+  .menu ul .menu_list:hover .list {
+    display: block;
+  }
