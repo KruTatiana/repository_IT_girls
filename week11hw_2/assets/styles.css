@@ -1,0 +1,51 @@
+body {
+    margin: 0 auto;
+    width: 80%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.entry-block {
+    width: 70%;
+    margin: 2% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.entry-field {
+    display: block;
+    width: 320px;
+    height: 30px;
+    font-size: 1rem;
+}
+
+button {
+    display: block;
+    width: 120px;
+    height: 30px;
+    background-color: #00b33c; 
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+button:hover{
+    border: solid 2px silver;
+}
+
+.list {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.list>li{
+    font-size: 1.5rem;
+}
+
+.completed {
+    text-decoration: line-through;
+}
