@@ -7,30 +7,44 @@ h1 {
     text-align: center;
 }
 
-.entry-block {
-    width: 70%;
-    margin: 2% auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+img {
+    width: 10vw;
+    margin-right: 5%;
 }
 
-.entry-field {
-    display: block;
-    width: 320px;
-    height: 30px;
-    font-size: 1rem;
+.backet-flex{
+    display: flex;
+    flex-direction: column;
+    margin: 2% auto;
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 5% auto;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+}
+
+.price1, .price2, .price3, .price4 {
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
 }
 
 button {
     display: block;
-    width: 120px;
-    height: 30px;
+    width: 400px;
+    height: 80px;
     background-color: #00b33c; 
     color: white;
     border: none;
     border-radius: 6px;
+    font-size: 1.5rem;
 }
 
 button:hover{

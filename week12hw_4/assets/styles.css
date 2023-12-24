@@ -1,0 +1,121 @@
+body {
+    margin: 0 auto;
+    width: 50%;
+    display: grid;
+    grid-template-areas: "header1 header1"
+                        "header_comment header_chat"
+                        "name chat"
+                        "avatar chat"
+                        "comment chat"
+                        "button button";
+    background-color: black;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    grid-area: header1;
+    justify-self: center;
+    font-weight: 600;
+    color: white;
+}
+
+h2 {
+    font-weight: bold;
+    color: rgb(68, 95, 214);
+}
+
+.lable>span {
+    font-weight: bold;
+}
+
+input {
+    display: block;
+    margin-top: 1%;
+    width: 60%;
+    height: 3rem;
+    background-color: gray;
+    font-size: 1.3rem;
+    border: dashed rgb(68, 95, 214) 2px;
+}
+
+#comment_place__input {
+    height: 13rem;
+}
+
+.header_comment {
+    grid-area: header_comment;
+}
+
+.name {
+    grid-area: name;
+}
+
+.link_avatar {
+    grid-area: avatar;
+}
+
+.comment_place {
+    grid-area: comment;
+}
+
+.form_section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 5%;
+}
+
+.header_chat {
+    grid-area: header_chat;
+}
+
+.chat_output {
+    grid-area: chat;
+}
+
+.chat_avatar {
+    display: block;
+    max-width: 50px;
+}
+
+button {
+    display: block;
+    grid-area: button;
+    justify-self: start;
+    width: 120px;
+    height: 30px;
+    margin-top: 5%;
+    background-color: rgb(68, 95, 214); 
+    color: white;
+    font-weight: bolder;
+    border: none;
+    border-radius: 6px;
+}
+
+button:hover{
+    border: solid 2px silver;
+}
+.chat_output {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.user_options {
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+}
+
+.chat_nick {
+    align-self: center;
+    margin-left: 10%;
+    font-weight: bold;
+    color: rgb(68, 95, 214);
+}
+
+.chat_message {
+    width: 100%;
+    margin-top: 5%;
+}

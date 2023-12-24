@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сервис коментариев</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <h1>Сервис коментариев со спам фильтром</h1>
+    <h2 class="header_comment">Оставьте ваш комментарий</h2>
+    <form action="" method="get" name="form_comment" id="coment_form">
+      <div class="name form_section">
+        <label class="lable" for="name__input"
+          >Введите Ваше <span>имя</span>:</label
+        >
+        <input id="name__input" type="text" />
+      </div>
+      <div class="link_avatar form_section">
+        <label class="lable" for="link_avatar__input"
+          >Введите ссылку <span>Вашего аватара</span>:</label
+        >
+        <input id="link_avatar__input" type="url" />
+      </div>
+      <div class="comment_place form_section">
+        <label class="lable" for="comment_place__input"
+          >Оставьте комментарий:</label
+        >
+        <input id="comment_place__input" type="text" />
+      </div>
+      <button id="button_send">Отправить</button>
+    </form>
+    <h2 class="header_chat">Чат</h2>
+    <div class="chat_output">
+      <div class="user_options">
+        <img class="chat_avatar" src="" />
+        <div class="chat_nick"></div>
+      </div>
+      <div class="chat_message"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
