@@ -96,6 +96,7 @@ button {
 button:hover{
     border: solid 2px silver;
 }
+
 .chat_output {
     display: flex;
     flex-direction: column;
@@ -118,4 +119,35 @@ button:hover{
 .chat_message {
     width: 100%;
     margin-top: 5%;
+}
+
+.input_choice {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input_choice-radio {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+}
+
+.input_choice-radio>label {
+    align-self: center;
+    padding-left: 10%;
+}
+
+.name_choice_input {
+    width: 1.5rem;
+
+}
+
+.choice_q {
+    width: 60%;
+}
+
+.name_choice_input input[type=radio]:checked {
+    background-color: rgb(68, 95, 214);
 }

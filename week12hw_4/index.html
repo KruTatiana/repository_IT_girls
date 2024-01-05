@@ -10,6 +10,31 @@
     <h1>Сервис коментариев со спам фильтром</h1>
     <h2 class="header_comment">Оставьте ваш комментарий</h2>
     <form action="" method="get" name="form_comment" id="coment_form">
+      <div class="choice_q">
+        <p class="question">Показывать ваше имя?</p>
+        <div class="input_choice">
+          <div class="input_choice-radio">
+            <input
+              class="name_choice_input"
+              type="radio"
+              id="yes_name"
+              name="show_name"
+              value="yes"
+            />
+            <label for="yes_name">Да</label>
+          </div>
+          <div class="input_choice-radio">
+            <input
+              class="name_choice_input"
+              type="radio"
+              id="no_name"
+              name="show_name"
+              value="no"
+            />
+            <label for="no_name">Нет</label>
+          </div>
+        </div>
+      </div>
       <div class="name form_section">
         <label class="lable" for="name__input"
           >Введите Ваше <span>имя</span>:</label
@@ -35,6 +60,7 @@
       <div class="user_options">
         <img class="chat_avatar" src="" />
         <div class="chat_nick"></div>
+        <div class="message_time"></div>
       </div>
       <div class="chat_message"></div>
     </div>
