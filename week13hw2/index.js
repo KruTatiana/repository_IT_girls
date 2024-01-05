@@ -11,11 +11,8 @@ function birthdayfunction() {
   let birthdayDate = birthdayInput.valueAsNumber;
   let currentDate = Date.now();
   let timeZone = Math.abs(new Date().getTimezoneOffset());
-  let resultDays = Math.round((birthdayDate-currentDate+timeZone)/(1000*60*60*24));
-  // console.log(birthdayDate-currentDate+timeZone);
-  // console.log((birthdayDate-currentDate+timeZone)/(1000*60*60*24));
-  // console.log((birthdayDate-currentDate-timeZone)/(1000*60*60*24));
-
+  let resultDays = Math.ceil((birthdayDate-currentDate+timeZone)/(1000*60*60*24));
+console.log((birthdayDate-currentDate+timeZone)/(1000*60*60*24));
   if (resultDays>4 || resultDays==0) {
   a = 'дней';
   b = 'Осталось';
