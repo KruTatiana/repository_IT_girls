@@ -1,19 +1,15 @@
 const button = document.getElementById('greenButton');
-const tasksInput = document.getElementById('tasksInput');
-const taskList = document.querySelector('.list')
+const priceFirst = document.querySelector('.price1 span.number');
+const priceSecond = document.querySelector('.price2 span.number');
+const priceThird = document.querySelector('.price3 span.number');
+const priceFourth = document.querySelector('.price4 span.number');
+const resultPrice = document.querySelector('.result');
 
-function createTask() {
-        const newTask = document.createElement('li');
-        newTask.textContent = tasksInput.value;
-        taskList.append(newTask);
-        tasksInput.value = '';
+
+function makeDiscount() {
+        let result = ((+ priceFirst.innerHTML)+(+ priceSecond.innerHTML)+(+ priceThird.innerHTML)+(+ priceFourth.innerHTML))*0.8;
+        resultPrice.textContent = result; 
+        console.log (result);
 }
 
-function checkTask(event) {
-    if (event.target.tagName === 'LI') {
-        event.target.classList.toggle('completed'); 
-    }
-};
-
-button.addEventListener('click', createTask);
-taskList.addEventListener('click', checkTask);
+button.addEventListener('click', makeDiscount);
