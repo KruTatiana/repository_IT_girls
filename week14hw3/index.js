@@ -55,9 +55,9 @@ dataArray.forEach(item => {
   skills.textContent = item.career;
   films.textContent = 'фильмография';
   films.href = item.films;
-  const headerTwo = listItem.append(nameHeader);
-  const skillsString = listItem.append(skills);
-  const filmsLink = listItem.append(films);
+  listItem.append(nameHeader);
+  listItem.append(skills);
+  listItem.append(films);
   directorsList.append(listItem);
 });
 
