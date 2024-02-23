@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/normalize.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Form</title>
+  </head>
+  <body class="container">
+    <form action="#" class="form_reg" name="myForm">
+      <label for="user_name">Имя</label>
+      <input
+        type="text"
+        id="user_name"
+        class="text_input"
+        name="name_input"
+        placeholder="Введите имя"
+        minlength="2"
+        maxlength="20"
+        required
+      />
+      <div class="error" id="errorName"></div>
+      <label for="user_email">E-mail</label>
+      <input
+        type="email"
+        id="user_email"
+        class="text_input"
+        name="email-input"
+        placeholder="Введите e-mail"
+        required
+      />
+      <div class="error" id="errorEmail"></div>
+      <label for="user_age">Возраст</label>
+      <input
+        type="text"
+        id="user_age"
+        class="text_input"
+        name="age_input"
+        placeholder="Введите возраст ДД.ММ.ГГГГ"
+        required
+      />
+      <div class="error" id="errorAge"></div>
+      <p class="header_p">Пол</p>
+      <div class="check-point">
+        <input
+          type="radio"
+          id="woman"
+          class="gender_radio"
+          name="gender_radio"
+        />
+        <label for="woman" class="check-label">Женский</label>
+      </div>
+      <div class="check-point">
+        <input type="radio" id="man" class="gender_radio" name="gender_radio" />
+        <label for="man" class="check-label">Мужской</label>
+      </div>
+      <div class="error" id="errorRadio"></div>
+      <p class="header_p">Профессия</p>
+      <select name="select" class="select_list" required>
+        <option value="item0" selected>------</option>
+        <option value="item1">Врач</option>
+        <option value="item2">Программист</option>
+        <option value="item3">Учитель</option>
+        <option value="item4">Дизайнер</option>
+        <option value="item5">Инженер</option>
+        <option value="item6">Продавец</option>
+        <option value="item7">Другое</option>
+      </select>
+      <div class="error" id="errorSelect"></div>
+      <label for="passvord_input">Пароль</label>
+      <p class="password_rules">
+        Не менее 8 символов, из которых одна заглавная буква, одна строчная
+        буква и одна цифра
+      </p>
+      <input
+        id="passvord_input"
+        type="text"
+        class="text_input"
+        minlength="8"
+        placeholder="Введите пароль"
+        pattern="/(?=.+[a-z])(?=.+[A-Z])(?=.+\d)/g"
+        required
+      />
+      <div class="error" id="errorPassword"></div>
+      <div class="check-point">
+        <input
+          type="checkbox"
+          id="check_agree"
+          class="checkbox_agree"
+          required
+        />
+        <label for="check_agree" class="check-label" id="check_agree"
+          >Я согасен на обработку данных</label
+        >
+        <div class="error" id="termsError"></div>
+      </div>
+      <button class="form_reg__button">Отправить</button>
+    </form>
+    <script src="./index.js"></script>
+  </body>
+</html>
