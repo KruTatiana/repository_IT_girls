@@ -43,11 +43,13 @@ margin-bottom: 0.5%;
 .select_list {
   width: 10rem;
   margin-top: 2%;
+  outline:none;
 }
 
 .text_input {
   margin-top: 2%;
   width: 98%;
+  outline:none;
 }
 
 .password_rules {

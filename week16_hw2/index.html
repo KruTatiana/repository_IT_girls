@@ -46,13 +46,20 @@
         <input
           type="radio"
           id="woman"
-          class="gender_radio"
+          value="woman"
+          class="gender_radio radio_woman"
           name="gender_radio"
         />
         <label for="woman" class="check-label">Женский</label>
       </div>
       <div class="check-point">
-        <input type="radio" id="man" class="gender_radio" name="gender_radio" />
+        <input
+          type="radio"
+          id="man"
+          value="man"
+          class="gender_radio radio_man"
+          name="gender_radio"
+        />
         <label for="man" class="check-label">Мужской</label>
       </div>
       <div class="error" id="errorRadio"></div>
@@ -70,8 +77,8 @@
       <div class="error" id="errorSelect"></div>
       <label for="passvord_input">Пароль</label>
       <p class="password_rules">
-        Не менее 8 символов, из которых одна заглавная буква, одна строчная
-        буква и одна цифра
+        Не менее 8 символов, из которых как минимум одна заглавная буква, одна
+        строчная буква и одна цифра
       </p>
       <input
         id="passvord_input"
@@ -79,7 +86,7 @@
         class="text_input"
         minlength="8"
         placeholder="Введите пароль"
-        pattern="/(?=.+[a-z])(?=.+[A-Z])(?=.+\d)/g"
+        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$"
         required
       />
       <div class="error" id="errorPassword"></div>
