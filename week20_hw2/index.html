@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <title>StarWarsLibrary</title>
+  </head>
+  <body>
+    <main>
+      <h3>Кого или что будем искать?</h3>
+      <select name="attributes_list" id="attribute_value" class="input_select">
+        <option value="films">Фильмы</option>
+        <option value="people">Персонажи</option>
+        <option value="planets">Планеты</option>
+        <option value="species">Вид</option>
+        <option value="starships">Звездолёт</option>
+        <option value="vehicles">Транспорт</option>
+      </select>
+      <input type="text" id="type_number" class="input_number" />
+      <button class="button" id="search_button">Найти</button>
+      <article class="article"></article>
+      <div class="error"></div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
